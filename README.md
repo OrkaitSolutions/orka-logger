@@ -5,7 +5,7 @@ This is custom logger created for backend for @orkait services, its a shared log
 ## Usage/Examples
 
 ```javascript
-import Logger, { filoQueue, loggerRedisClient } from "@orka/logger";
+import Logger, { filoQueue, loggerRedisClient } from "@orkait/logger";
 import express from "express";
 
 import dotenv from "dotenv";
