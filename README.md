@@ -7,6 +7,12 @@ This is a redis logger, made for only custom purposes
 ```Browser: not supported```
 
 
+## Install
+```npm install @orkait/logger```
+or
+```yarn add @orkait/logger```
+
+
 ## Usage/Examples
 
 ```javascript
