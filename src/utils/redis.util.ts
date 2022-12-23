@@ -3,7 +3,7 @@ import { createClient } from "redis";
 
 export const loggerRedisClient = (url: string, password: string) => {
 	let _redisClient: RedisClientType;
-	const createConnection = () => {
+	const connect = () => {
 		if (!_redisClient) {
 			_redisClient = createClient({
 				url: url,
@@ -19,7 +19,7 @@ export const loggerRedisClient = (url: string, password: string) => {
 		return _redisClient;
 	};
 
-	const closeConnection = (): void => {
+	const disconnect = (): void => {
 		try {
 			_redisClient.disconnect();
 		} catch (e: any) {
@@ -27,8 +27,7 @@ export const loggerRedisClient = (url: string, password: string) => {
 		}
 	};
 	return {
-		createConnection,
-		closeConnection,
+		connect,
+		disconnect,
 	};
 };
-
