@@ -38,7 +38,6 @@
 		"typescript": "^4.9.4"
 	},
 	"np": {
-		"yarn": false,
-		"contents": "dist"
+		"yarn": false
 	}
 }
