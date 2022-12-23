@@ -4,7 +4,7 @@
 		"type": "git",
 		"url": "git+https://github.com/orkait/orka-logger.git"
 	},
-	"version": "1.2.5",
+	"version": "1.2.4",
 	"description": "custom logger for orkait",
 	"main": "dist/index.js",
 	"module": "dist/index.js",
@@ -14,7 +14,7 @@
 	],
 	"scripts": {
 		"lint": "eslint src --ext .ts",
-		"prepublishOnly": "npm run compile && np --no-cleanup --no-tests",
+		"prepublishOnly": "npm run compile && np --no-cleanup --no-tests --no-publish",
 		"ts-types": "tsc --emitDeclarationOnly --outDir dist",
 		"build": "rimraf dist && node ./esbuild.js && npm run ts-types",
 		"test": "npm run lint && npm run build",
