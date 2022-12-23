@@ -3,7 +3,8 @@ This is custom logger created for backend for @orkait services, its a shared log
 
 ## Supports
 Nodejs: since it depends on @types/node
-Browser: No support 
+
+Browser: not supported
 
 
 ## Usage/Examples
