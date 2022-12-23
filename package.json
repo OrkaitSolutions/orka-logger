@@ -7,7 +7,6 @@
 	"version": "1.2.9",
 	"description": "custom logger for orkait",
 	"main": "dist/index.js",
-	"module": "dist/index.js",
 	"types": "dist/index.d.ts",
 	"files": [
 		"/dist"
