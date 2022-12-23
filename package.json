@@ -13,10 +13,11 @@
 	"scripts": {
 		"lint": "eslint src --ext .ts",
 		"prepublishOnly": "npm run compile && np --no-cleanup --no-tests --no-publish",
-		"np": "npm run test && np --no-tests",
+		"deploy": "npm run test && np --no-tests",
 		"ts-types": "tsc --emitDeclarationOnly --outDir dist",
 		"build": "rimraf dist && node ./esbuild.js && npm run ts-types",
-		"test": "npm run lint && npm run build"
+		"test": "npm run lint && npm run build",
+		"compile": "npm run build"
 	},
 	"dependencies": {
 		"kleur": "^4.1.5",
