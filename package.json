@@ -17,9 +17,11 @@
 	"scripts": {
 		"tsc": "tsc --noEmit",
 		"compile": "father build --esm --cjs",
+		"lint": "eslint src --ext .ts",
+		"lint:fix": "prettier --write '{src,tests}/**/*.ts'",
 		"prepublishOnly": "npm run compile && np --no-cleanup --no-tests --no-publish",
 		"publish": "npm run compile && np --no-tests",
-		"test": "npm run tsc"
+		"test": "npm run tsc && npm run lint"
 	},
 	"dependencies": {
 		"kleur": "^4.1.5",
@@ -40,6 +42,10 @@
 	"homepage": "https://github.com/orkait/orka-logger#readme",
 	"devDependencies": {
 		"@types/node": "^18.11.17",
+		"@typescript-eslint/eslint-plugin": "^5.47.0",
+		"@typescript-eslint/parser": "^5.47.0",
+		"eslint": "^8.30.0",
+		"father": "^4.1.2",
 		"np": "*",
 		"typescript": "^4.9.4"
 	},
