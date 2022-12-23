@@ -13,7 +13,7 @@
 		"dist/esm"
 	],
 	"scripts": {
-		"tsc": "rm -rf dist/ && tsc -p tsconfig.json && tsc -p tsconfig-cjs.json",
+		"tsc": "rm -rf dist/ && tsc -p tsconfig.json && tsc -p tsconfig-cjs.json && rm -rf dist/src",
 		"test": ""
 	},
 	"dependencies": {
@@ -39,7 +39,6 @@
 		"typescript": "^4.9.4"
 	},
 	"np": {
-		"yarn": false,
-		"contents": "./"
+		"yarn": false
 	}
 }
