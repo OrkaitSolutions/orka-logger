@@ -12,10 +12,6 @@ This is a redis logger, made for only custom purposes
 ```javascript
 import Logger, { filoQueue, loggerRedisClient } from "@orkait/logger";
 import express from "express";
-
-import dotenv from "dotenv";
-dotenv.config();
-
 const app = express();
 
 const redisClient = loggerRedisClient(
