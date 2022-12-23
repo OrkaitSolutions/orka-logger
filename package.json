@@ -19,7 +19,7 @@
 		"build": "rimraf dist && node ./esbuild.js && npm run ts-types",
 		"test": "npm run lint && npm run build",
 		"compile": "npm run build",
-		"release": "np --no-yarn --no-cleanup"
+		"release": "np --no-yarn --no-tests --no-cleanup --no-publish"
 	},
 	"dependencies": {
 		"kleur": "^4.1.5",
