@@ -1,6 +1,10 @@
 # Logger 
 This is custom logger created for backend for @orkait services, its a shared logger.
 
+## Supports
+Nodejs: since it depends on @types/node
+Browser: No support 
+
 
 ## Usage/Examples
 
