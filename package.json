@@ -18,6 +18,7 @@
 		"tsc": "tsc --noEmit",
 		"compile": "father build --esm --cjs",
 		"prepublishOnly": "npm run compile && np --no-cleanup --no-tests --no-publish",
+		"publish": "npm run compile && np --no-tests",
 		"test": "npm run tsc"
 	},
 	"dependencies": {
