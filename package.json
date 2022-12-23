@@ -16,7 +16,8 @@
 		"ts-types": "tsc --emitDeclarationOnly --outDir dist",
 		"build": "rimraf dist && node ./esbuild.js && npm run ts-types",
 		"test": "npm run lint && npm run build",
-		"compile": "npm run build"
+		"compile": "npm run build",
+		"release": "np"
 	},
 	"dependencies": {
 		"kleur": "^4.1.5",
