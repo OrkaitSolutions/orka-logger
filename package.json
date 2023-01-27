@@ -4,7 +4,7 @@
 		"type": "git",
 		"url": "git+https://github.com/orkait/orka-logger.git"
 	},
-	"version": "1.4.2",
+	"version": "1.4.3",
 	"description": "custom logger for orkait",
 	"main": "dist/index.js",
 	"types": "dist/index.d.ts",
