@@ -14,10 +14,6 @@ const timeNow = () => {
 	return new Date().toLocaleString();
 };
 
-const stringify = (data: any) => {
-	return JSON.stringify(data);
-};
-
 class Logger {
 	shortname: string;
 	time: {
@@ -45,7 +41,7 @@ class Logger {
 
 		if (this.queue) {
 			this.queue.push(
-				stringify({
+				JSON.stringify({
 					msg: config.error?.message,
 					status: config.status,
 					level: config.level,
@@ -67,7 +63,7 @@ class Logger {
 
 		if (this.queue) {
 			this.queue.push(
-				stringify({
+				JSON.stringify({
 					message: config.message || "",
 					status: config.status,
 					log: "warning",
@@ -85,7 +81,7 @@ class Logger {
 
 		if (this.queue) {
 			this.queue.push(
-				stringify({
+				JSON.stringify({
 					message: config.message || "",
 					status: config.status,
 					log: "info",
@@ -103,7 +99,7 @@ class Logger {
 
 		if (this.queue) {
 			this.queue.push(
-				stringify({
+				JSON.stringify({
 					message: config.message || "",
 					status: config.status,
 					log: "success",
@@ -121,7 +117,7 @@ class Logger {
 
 		if (this.queue) {
 			this.queue.push(
-				stringify({
+				JSON.stringify({
 					message: config.message || "",
 					log: "server",
 					...this.time,
@@ -138,7 +134,7 @@ class Logger {
 
 		if (this.queue) {
 			this.queue.push(
-				stringify({
+				JSON.stringify({
 					message: config.message || "",
 					log: "cron",
 					...this.time,
